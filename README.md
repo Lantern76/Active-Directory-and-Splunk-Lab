@@ -75,25 +75,45 @@ First I will need to login into the the Victim’s machine and click on Settings
 
 Now I will input the domain just created under the name of Lantern.local
 
+![1 Add to Domain](https://github.com/Lantern76/Active-Directory-and-Splunk-Lab/assets/119342094/bbd6419e-c42d-429a-8146-1cf6ac02e91a)
+
 Once the changes have been made the machine will restart 
 
 Now under the login screen I will log in using the newly created user, Jenny. As proof that the Victim machine has joined the new domain under the input password screen there will be a short sentence saying, “Sign in to: Lantern.local”
+
+![2 Sign into new Domain](https://github.com/Lantern76/Active-Directory-and-Splunk-Lab/assets/119342094/a72e87d5-0788-4954-8cad-cc303ff58d13)
 
 ### Steps: Part 3: Attacking Victim Machine 
 
 Switching over the attacking machine I will create a custom wordlist using the 20 common passwords taken from the famous wordlist, rockyou.txt. Adding the password of the user Jenny Smith for the purposes of the lab. 
 
+![3 password list](https://github.com/Lantern76/Active-Directory-and-Splunk-Lab/assets/119342094/bde71905-5bfa-48d2-b96f-8b76d897c9e5)
+
 The newly made password list will be saved under the passwords.txt file
+
+![3 password list](https://github.com/Lantern76/Active-Directory-and-Splunk-Lab/assets/119342094/f4b894c1-78ed-4f9e-9e01-dd8f6795f64f)
 
 Switching over to the victim machine I will temporarily enable RDP to allow the attacking machine to successfully brute force attack the victim's machine. This will be allowed for the newly made users created from the previous steps in part 1. 
 
+![4 allow rdp for users](https://github.com/Lantern76/Active-Directory-and-Splunk-Lab/assets/119342094/9f3374ee-50b3-446c-8df6-546627359730)
+
 Going back to the Kali machine I will now initiate a crowbar and launch a brute force attack on the victim machine. We can see that the attack was successful. Now the fun begins as we can see how this telemetry will look in the Splunk dashboard.
+
+![5 successful rdp brute force](https://github.com/Lantern76/Active-Directory-and-Splunk-Lab/assets/119342094/43cf3400-d303-4a2b-ad4e-dc2ba4a2a781)
 
 Logging back into the Splunk dashboard and going over to the monitoring center I will search for the “endpoint” detection index created for the lab. Under the user jsmith and altering the detection time we can see the attempted attacks under the event id of 4625.
 
+![6 splunk event codes](https://github.com/Lantern76/Active-Directory-and-Splunk-Lab/assets/119342094/55add1fb-2716-4f0e-9293-dd592094738f)
+
 A tip for detecting brute force attacks is as seen in the event logs. The time frame in which all of the failed logins were essentially at the same time. Now does this seem like a human simply forgetting their password(hint it does not)?
+
+![7 Event ID 4625](https://github.com/Lantern76/Active-Directory-and-Splunk-Lab/assets/119342094/fdc6c371-aa22-4c56-a17a-081afb8c6587)
+
+![8 time indicators](https://github.com/Lantern76/Active-Directory-and-Splunk-Lab/assets/119342094/28797552-5934-4ef9-afca-b36597a18b6a)
+
 
 To dive deeper into the attack we can click on the event to learn more information about the event. Key information such as the workstation name, source IP, and account name used can help SOC analysts better understand and detect the nature of potential attacks.
 
+![9 Attack machine data splunk](https://github.com/Lantern76/Active-Directory-and-Splunk-Lab/assets/119342094/06059531-8eee-489b-8479-b37e78658191)
 
 ### This was a fun and adventurous way for me to gain a better understanding of both Active Directories/Domains, and Splunk(a great red teaming simulation as well). I had a blast configuring the new domain and now have a much better understanding of how powerful Splunk is. I plan on diving much deeper into the Splunk tool and will hopefully connect it to a firewall for perhaps a more advanced project at a later date. Thanks for reading :) 
