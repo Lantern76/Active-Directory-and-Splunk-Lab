@@ -5,7 +5,7 @@ This lab is designed around utilizing virtual environments through VMware to cre
 
 [myDFIR](https://www.mydfir.com/)
 
-Youtube: MyDFIR - YouTube
+[myDFIR Youtube](https://www.youtube.com/@MyDFIR)
 
 # Network Diagram 
 
