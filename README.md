@@ -8,6 +8,7 @@ Youtube: MyDFIR - YouTube
 
 # Network Diagram 
 
+![network topography](https://github.com/Lantern76/Active-Directory-and-Splunk-Lab/assets/119342094/e02423de-fc8c-4fd7-af28-7209abc72869)
 
 ### Active Directory/Splunk Lab 
 
