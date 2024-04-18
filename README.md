@@ -26,7 +26,6 @@ The learning objectives for this lab include learning more about the SIEM Splunk
 - Windows Server VM to act as the Active Directory and Domain
 - Windows VM to act as the victim machine connected to the Servers Active Directory
 - Crowbar to act as the attack framework utilized by the Kali Linux machine 
--
 
   ### Steps: Part 1: Configuring Windows Active Directory and Domain
 
@@ -41,7 +40,7 @@ Under the Deployment Configuration I will click on “Add new forest” and name
 The domain needs to have a top level domain so I cannot simply name it Lantern
 Everything else can be left as default and I only need to input a password for the rest of the process.
 Like any Active Directory it will need some users. The next steps will involve creating 2 new users by clicking on the  tools icon, and then “Active Directory Users and Computers”.
- Next I will navigate to mylantern.local, and under the folders on the left hand side right click, new, create a new folder and name it “IT”. similar to how a real IT team will have its own Organizational Unit(OU) in an Active Directory. 
+Next I will navigate to mylantern.local, and under the folders on the left hand side right click, new, create a new folder and name it “IT”. similar to how a real IT team will have its own Organizational Unit(OU) in an Active Directory. 
 The new user will be named Jenny Smith and a password will be assigned
 Now the Windows server is acting as the domain controller and the active directory has been set up. The next step is to configure the victim machine to become linked to the newly created domain.
 
