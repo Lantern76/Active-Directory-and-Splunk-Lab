@@ -3,7 +3,7 @@ This lab is designed around utilizing virtual environments through VMware to cre
 
 ### As a disclaimer, the original idea for this lab comes from Steven of MyDFIR. For the purposes of streamlining the lab several setup parts have been omitted including the virtual machine set up process, program downloads/installs, and NAT set up. But for anyone wishing to replicate this lab and many others I recommend checking Steven out at both his youtube channel and website linked below. 
 
-[myDFIR](https://www.mydfir.com/)
+[myDFIR Website](https://www.mydfir.com/)
 
 [myDFIR Youtube](https://www.youtube.com/@MyDFIR)
 
