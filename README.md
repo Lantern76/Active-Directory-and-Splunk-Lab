@@ -9,7 +9,7 @@ This lab is designed around utilizing virtual environments through VMware to cre
 
 # Network Diagram 
 
-![network topography](https://github.com/Lantern76/Active-Directory-and-Splunk-Lab/assets/119342094/e02423de-fc8c-4fd7-af28-7209abc72869)
+![network topography](https://github.com/Lantern76/Active-Directory-and-Splunk-Lab/assets/119342094/7a203bf7-f632-4ee6-aeac-4e60ee4b28ba)
 
 
 ### Objective
