@@ -1,7 +1,7 @@
 ### Active Directory/Splunk -Lab
 This lab is designed around utilizing virtual environments through VMware to create an active directory Windows server as well as a domain. A victim machine(also Windows) will be linked to the active directory server and Sysmon will be utilized for logging purposes. Splunk will be used as the SIEM of choice as data concerning both the server and victim will be forwarded to Splunk for analysis. The attacking machine will be a Kali Linux VM and all these machines will be connected over a custom NAT with a network address of 192.168.10.0/24. The goal of the lab is to create telemetry between the attacking and defending machines and to analyze the resulting telemetry in the Splunk hub. This will be an exciting lab to complete and a wonderful learning opportunity to become more familiar with active directory as a whole :)  
 
-### As a disclaimer, the original idea for this lab comes from Steven of MyDFIR. For the purposes of streamlining the lab several setup parts have been omitted including the virtual machine set up process, program downloads/installs, and NAT set up. But for anyone wishing to replicate this lab and many others I recommend checking Steven out at both his youtube channel and website linked below. 
+### As a disclaimer, the original idea for this lab comes from Steven of MyDFIR. I recommend checking Steven out at both his youtube channel and website linked below! 
 
 [myDFIR Website](https://www.mydfir.com/)
 
